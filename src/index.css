@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+:root {
+  --darkmode_bg:#272343;
+  --lightmode_bg: #eceff6;
+}
 body {
   margin: 0;
-  color: aliceblue;
   font-family: 'Inter', sans-serif;
   padding-top: 1rem;
   padding-bottom: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  /* background: var(--lightmode_bg);
+  color: #272343; */
+  background: var(--darkmode_bg);
+  color: #eceff6;
   border: 2px solid white;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* for dark theme */
-  background: #272343; 
-  /* for light theme */
-  /* background: #eceff6 */
+ 
 }
 
 code {
