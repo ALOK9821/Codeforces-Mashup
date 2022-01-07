@@ -5,7 +5,7 @@ import CodeIcon from '@material-ui/icons/Code';
 const Header = () => {
     return (
         <>
-            <h1> <CodeIcon/>  Codeforces Problems generator</h1>
+            <h1> <CodeIcon/>  Codeforces Problems Generator</h1>
             <h5>Get Unsolved Problems to generate Mashups/(Virtual contest) on Codeforces </h5> 
         </>
     )
