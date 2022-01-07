@@ -1,4 +1,3 @@
-
 import './App.scss';
 import Head from "./Header/Header"
 function App() {

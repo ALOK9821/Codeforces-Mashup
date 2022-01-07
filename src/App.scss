@@ -1,5 +1,4 @@
-$darkmode_bg : #272343;
-$lightmode_bg : #eceff6;
+@import "./variables";
 .App{
     background: $darkmode_bg;
 }
