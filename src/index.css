@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: aliceblue;
+  font-family: 'Inter', sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* for dark theme */
+  background: #272343; 
+  /* for light theme */
+  /* background: #F2F1EF; */
 }
 
 code {
