@@ -167,4 +167,16 @@
 .buttons2 .swap:hover span {
   opacity: 1;
 }
+
+.buttons3 svg {
+  height: 3em;
+  width: 3em;
+}
+
+.buttons3 .switching {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  left: 85%;
+}
 /*# sourceMappingURL=Button.css.map */

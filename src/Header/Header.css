@@ -1,0 +1,14 @@
+h1 {
+  text-shadow: #4937aa 1px 0 10px;
+  margin-bottom: -0.5rem;
+}
+
+.header .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=Header.css.map */
