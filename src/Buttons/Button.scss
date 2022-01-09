@@ -3,6 +3,7 @@
 
 .buttons1 {
   padding: 20px;
+  cursor: pointer;
   @keyframes pulse {
     0% {
       transform: scale(0);
@@ -19,6 +20,7 @@
   }
 
   .button {
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
     background: #c06c84;
@@ -34,11 +36,13 @@
     will-change: transform;
 
     &:hover {
+      cursor: pointer;
       background: darken(#c06c84, 10%);
       box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
       transform: translate3d(0, -2px, 0);
     }
     &:active {
+      cursor: pointer;
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
       transform: translate3d(0, 1px, 0);
     }
@@ -46,6 +50,7 @@
 
   .pulse {
     position: relative;
+    cursor: pointer;
 
     &:before,
     &:after {
@@ -78,6 +83,7 @@
 
 .buttons2 {
   padding: 20px;
+  cursor: pointer;
   a {
     padding: 1rem 2rem;
     padding: 10px 20px;
@@ -136,6 +142,7 @@
 
 
 .buttons3 {
+  cursor: pointer;
   svg {
     height: 3em;
     width: 3em;
