@@ -8,8 +8,10 @@ import { render } from '@testing-library/react';
 const Header = (props) => {
     return (
         <>
+
         <div className="header">
         <h1> <CodeIcon/>  Codeforces Problems generator</h1>
+
             <h5>Get Unsolved Problems to generate Mashups/(Virtual contest) on Codeforces </h5> 
             <Button type={3}/>
         </div>
