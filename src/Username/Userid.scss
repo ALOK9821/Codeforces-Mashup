@@ -16,3 +16,17 @@
        font-size: 2rem;
    }
 }
+.input_containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    // border: 2px solid white;
+    width: 65%;
+    height: fit-content;
+    .inputcont{
+        margin-top: 0.8rem;
+        background-color: white;
+        border-radius: 1rem;
+    }
+}
