@@ -1,0 +1,15 @@
+.App {
+  padding: 1rem;
+}
+
+.light {
+  background: #eceff6;
+  color: black;
+  border-color: black;
+}
+
+.dark {
+  background: #272343;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=App.css.map */

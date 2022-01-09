@@ -85,8 +85,8 @@
     position: relative;
     border: 2px solid black;
     border-width: 3px;
-  border-style: solid;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-style: solid;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
     border-radius: 10px;
     color: black;
     background-color: transparent;
@@ -107,7 +107,7 @@
       color: white;
       transition: 0.35s ease;
     }
-  
+
     &::before {
       content: "";
       left: 0;
@@ -120,15 +120,32 @@
       border-radius: 10px;
       transition: 0.5s ease;
     }
-  
+
     &:hover {
       &:before {
         width: 100%;
       }
-  
+
       span {
         opacity: 1;
       }
     }
   }
+}
+
+
+
+.buttons3 {
+  svg {
+    height: 3em;
+    width: 3em;
+  }
+
+  .switching {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    left: 85%;
+  }
+
 }
