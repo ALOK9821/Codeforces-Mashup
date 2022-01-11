@@ -1,6 +1,10 @@
 // https://codepen.io/mroverdoz/pen/BGyXOJ
 // https://codepen.io/markmead/pen/xyKNqw
 
+.btns {
+  cursor: pointer;
+}
+
 .buttons1 {
   padding: 20px;
   @keyframes pulse {
@@ -139,6 +143,7 @@
   svg {
     height: 3em;
     width: 3em;
+    cursor: pointer;
   }
 
   .switching {

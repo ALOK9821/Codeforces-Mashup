@@ -9,11 +9,13 @@
     background: $lightmode_bg;
     color: black;
     border-color: black;
+    transition: 0.3s ease-in-out;
 }
 
 .dark {
     background: $darkmode_bg;
     color: whitesmoke;
+    transition: 0.3s ease-in-out;
 }
 
 

@@ -6,10 +6,14 @@
   background: #eceff6;
   color: black;
   border-color: black;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .dark {
-  background: #272343;
+  background: #0c2233;
   color: whitesmoke;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=App.css.map */
