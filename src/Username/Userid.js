@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Userid.scss";
 import Slider from "@mui/material/Slider";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
-
+import axios, { Axios } from 'axios';
 
 const Userid = () => {
 const [Usercount, setUsercount] = useState(1);
+const [Sub,setSub]=useState(0);
 const [User1, setUser1] = useState('');
 const [User2, setUser2] = useState('');
 const [User3, setUser3] = useState('');
@@ -17,14 +18,94 @@ const [User6, setUser6] = useState('');
 const [User7, setUser7] = useState('');
 const [User8, setUser8] = useState('');
 const [User9, setUser9] = useState('');
-
+ //https://codeforces.com/api/user.status?handle=alok10 user status api
+  
   const getValue = (e, val) => {
     setUsercount(val);
   };
+  const handlesubmit = ()=>{
+    setSub(!Sub);
+    console.log(Sub);
+  }
   const handlechange1 = (event) => {
     setUser1(event.target.value);
     console.log(User1);
   };
+  useEffect(() => {
+    const url = `https://codeforces.com/api/user.status?handle=${User1}`;
+    if(User1.length>1){
+         axios.get(url).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 1 is Incorrect');
+         })
+    }
+    const url2 = `https://codeforces.com/api/user.status?handle=${User2}`;
+    if(User2.length>1){
+         axios.get(url2).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 2 is Incorrect');
+         })
+    }
+    const url3 = `https://codeforces.com/api/user.status?handle=${User3}`;
+    if(User3.length>1){
+         axios.get(url3).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 3 is Incorrect');
+         })
+    }
+    const url4 = `https://codeforces.com/api/user.status?handle=${User4}`;
+    if(User4.length>1){
+         axios.get(url4).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 4 is Incorrect');
+         })
+    }
+    const url5 = `https://codeforces.com/api/user.status?handle=${User5}`;
+    if(User5.length>1){
+         axios.get(url5).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 5 is Incorrect');
+         })
+    }
+    const url6 = `https://codeforces.com/api/user.status?handle=${User6}`;
+    if(User6.length>1){
+         axios.get(url6).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 6 is Incorrect');
+         })
+    }
+    const url7 = `https://codeforces.com/api/user.status?handle=${User7}`;
+    if(User7.length>1){
+         axios.get(url7).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 7 is Incorrect');
+         })
+    }
+    const url8 = `https://codeforces.com/api/user.status?handle=${User8}`;
+    if(User8.length>1){
+         axios.get(url8).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 8 is Incorrect');
+         })
+    }
+    const url9 = `https://codeforces.com/api/user.status?handle=${User9}`;
+    if(User9.length>1){
+         axios.get(url9).then((res)=>{
+           console.log(res.status);
+         }).catch(error => {
+           alert('UserID 9 is Incorrect');
+         })
+    }
+  }, [Sub]);
+  
   const handlechange2 = (event) => {
     setUser2(event.target.value);
     console.log(User2);
@@ -86,6 +167,7 @@ const [User9, setUser9] = useState('');
         {(Usercount>=8 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user8" variant="filled" onChange={handlechange8}/>}
         {(Usercount>=9 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user9" variant="filled" onChange={handlechange9}/>}
       </div>
+      <button onClick={handlesubmit}>Submit</button>
       
     </>
   );
