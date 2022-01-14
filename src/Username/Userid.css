@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=Userid.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.user_info_container {
+  font-family: "Inter", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.user_info_container .Usercntslider {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.user_info_container h2 {
+  font-size: 2rem;
+}
+
+.input_containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.input_containers .inputcont {
+  margin-top: 0.8rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=Userid.css.map */
