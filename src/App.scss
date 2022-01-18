@@ -10,6 +10,12 @@
     color: black;
     border-color: black;
     transition: 0.3s ease-in-out;
+
+    .Problemid {
+        .btns {
+            border: 2px solid $darkmode_bg;
+        }
+    }
 }
 
 .dark {
@@ -31,7 +37,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 905px) {
     .divide {
         // width: 90vw;
         grid-template-rows: auto auto;
