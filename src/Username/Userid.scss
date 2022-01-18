@@ -1,36 +1,57 @@
 @import "../functions";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-.user_info_container {
-//   border: 2px solid white;
-  font-family: "Inter", sans-serif;
-  display: flex;
-  width: 50rem;
-  align-items: center;
-  justify-content: space-around;
+.Userid {
+  .user_info_container {
+      // border: 2px solid white;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    // width: 50rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 
-  .Usercntslider {
-    width: 40%;
-    margin-top: 2rem;
+    .Usercntslider {
+      width: 40%;
+      width: 80%;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 
-  h2 {
-    font-size: 2rem;
+  .input_containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: fit-content;
+    .inputcont {
+      margin-top: 0.8rem;
+      background-color: white;
+      border-radius: 1rem;
+    }
   }
 }
 
-.input_containers {
-//   border: 2px solid white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  // border: 2px solid white;
-  width: 65%;
-  height: fit-content;
-  .inputcont {
-    margin-top: 0.8rem;
-    background-color: white;
-    border-radius: 1rem;
+@media screen and (max-width: 540px) {
+  .Userid {
+    .user_info_container {
+      display: flex;
+      // grid-template-columns: auto auto auto;
+
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
   }
 }

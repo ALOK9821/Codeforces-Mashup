@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import axios, { Axios } from 'axios';
+import { TableBody } from "@mui/material";
 
 const Userid = () => {
 const [Usercount, setUsercount] = useState(1);
@@ -140,6 +141,7 @@ const [User9, setUser9] = useState('');
   };
   return (
     <>
+    <div className="Userid">
     <div className="user_info_container">
       <h1>Number of Users : </h1>
       <div className="Usercntslider">
@@ -168,6 +170,7 @@ const [User9, setUser9] = useState('');
         {(Usercount>=9 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User9" variant="filled" onChange={handlechange9}/>}
       </div>
       <button onClick={handlesubmit}>Submit</button>
+      </div>
       
     </>
   );
