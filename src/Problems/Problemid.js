@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const Problemid = () => {
   const [Problems, SetProblems] = useState([
-    " 800",
-    " 900",
+    "800",
+    "900",
     "1000",
     "1100",
     "1200",

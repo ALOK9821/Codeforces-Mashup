@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.light .Userid {
+  border: 2px solid #0c2233;
+}
+
 .Userid .user_info_container {
   font-family: "Inter", sans-serif;
   display: -webkit-box;
@@ -54,10 +58,10 @@
     display: flex;
   }
   .Userid .user_info_container h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .Userid .user_info_container h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=Userid.css.map */
