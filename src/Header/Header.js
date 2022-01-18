@@ -14,6 +14,8 @@ const Header = (props) => {
 
             <h5>Get Unsolved Problems to generate Mashups/(Virtual contest) on Codeforces </h5> 
             <Button type={3}/>
+            {/* <Button type={2} title={"ALOK"}/>
+            <Button type={1} title={"VISHAL"}/> */}
             {/* <Button type={1} title={"alok"}/>
             <Button type={2} title={"vishal"}/> */}
 

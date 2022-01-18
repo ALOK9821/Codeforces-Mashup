@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import axios, { Axios } from 'axios';
+import { TableBody } from "@mui/material";
 
 const Userid = () => {
 const [Usercount, setUsercount] = useState(1);
@@ -140,8 +141,9 @@ const [User9, setUser9] = useState('');
   };
   return (
     <>
+    <div className="Userid">
     <div className="user_info_container">
-    <h1>Number of Users : </h1>
+      <h1>Number of Users : </h1>
       <div className="Usercntslider">
       <Slider
         aria-label="Users"
@@ -157,17 +159,18 @@ const [User9, setUser9] = useState('');
     <h2>{Usercount}</h2>
       </div>
       <div className="input_containers">
-        {(Usercount>=1 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user1" variant="filled" onChange={handlechange1} /> }
-        {(Usercount>=4 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user2" variant="filled" onChange={handlechange2}/>}
-        {(Usercount>=3 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user3" variant="filled" onChange={handlechange3}/>}
-        {(Usercount>=2 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user4" variant="filled" onChange={handlechange4}/>}
-        {(Usercount>=5 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user5" variant="filled" onChange={handlechange5}/>}
-        {(Usercount>=6 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user6" variant="filled" onChange={handlechange6}/>}
-        {(Usercount>=7 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user7" variant="filled" onChange={handlechange7}/>}
-        {(Usercount>=8 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user8" variant="filled" onChange={handlechange8}/>}
-        {(Usercount>=9 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="user9" variant="filled" onChange={handlechange9}/>}
+        {(Usercount>=1 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User1" variant="filled" onChange={handlechange1} /> }
+        {(Usercount>=4 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User2" variant="filled" onChange={handlechange2}/>}
+        {(Usercount>=3 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User3" variant="filled" onChange={handlechange3}/>}
+        {(Usercount>=2 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User4" variant="filled" onChange={handlechange4}/>}
+        {(Usercount>=5 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User5" variant="filled" onChange={handlechange5}/>}
+        {(Usercount>=6 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User6" variant="filled" onChange={handlechange6}/>}
+        {(Usercount>=7 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User7" variant="filled" onChange={handlechange7}/>}
+        {(Usercount>=8 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User8" variant="filled" onChange={handlechange8}/>}
+        {(Usercount>=9 )&& <TextField id="outlined-basic" color={"secondary"} className="inputcont" label="User9" variant="filled" onChange={handlechange9}/>}
       </div>
       <button onClick={handlesubmit}>Submit</button>
+      </div>
       
     </>
   );

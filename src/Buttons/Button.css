@@ -1,5 +1,10 @@
+.btns {
+  cursor: pointer;
+}
+
 .buttons1 {
   padding: 20px;
+  cursor: pointer;
 }
 
 @-webkit-keyframes pulse {
@@ -39,6 +44,7 @@
 }
 
 .buttons1 .button {
+  cursor: pointer;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -63,6 +69,7 @@
 }
 
 .buttons1 .button:hover {
+  cursor: pointer;
   background: #ae4b67;
   -webkit-box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
@@ -71,6 +78,7 @@
 }
 
 .buttons1 .button:active {
+  cursor: pointer;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-transform: translate3d(0, 1px, 0);
@@ -79,6 +87,7 @@
 
 .buttons1 .pulse {
   position: relative;
+  cursor: pointer;
 }
 
 .buttons1 .pulse:before, .buttons1 .pulse:after {
@@ -113,6 +122,7 @@
 
 .buttons2 {
   padding: 20px;
+  cursor: pointer;
 }
 
 .buttons2 a {
@@ -168,9 +178,14 @@
   opacity: 1;
 }
 
+.buttons3 {
+  cursor: pointer;
+}
+
 .buttons3 svg {
   height: 3em;
   width: 3em;
+  cursor: pointer;
 }
 
 .buttons3 .switching {

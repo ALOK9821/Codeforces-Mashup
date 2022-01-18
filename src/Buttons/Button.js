@@ -42,6 +42,16 @@ const Button = (props) => {
         </div>
       </>
     );
+  } else if (props.type === 4) {
+    return (
+      <>
+        <div className="buttons4 btns">
+          <div className="add-del">
+            <button>+</button><span>{props.title}</span><button>-</button>
+          </div>
+        </div>
+      </>
+    );
   }
 };
 

@@ -1,6 +1,7 @@
 import './App.scss';
 import Head from "./Header/Header"
 import Userid from './Username/Userid';
+import Problemid from './Problems/Problemid';
 import Button from './Buttons/Button';
 import { useState } from 'react';
 // Got it! (Vishal Yadav Here...)
@@ -15,8 +16,10 @@ function App() {
     <>
     <div className="App">
     <Head/>
-    {/* <Button type={3}/> */}
-    <Userid/>
+    <div className="divide">
+      <Userid/>
+      <Problemid />
+    </div>
     </div>
     </>
 
