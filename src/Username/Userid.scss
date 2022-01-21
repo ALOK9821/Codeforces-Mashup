@@ -29,6 +29,11 @@
       font-size: 2rem;
     }
   }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
 
   .input_containers {
     display: flex;
