@@ -28,6 +28,15 @@
   font-size: 2rem;
 }
 
+.Userid .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .Userid .input_containers {
   display: -webkit-box;
   display: -ms-flexbox;
