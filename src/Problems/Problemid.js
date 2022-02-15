@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const Problemid = () => {
   const [Problems, SetProblems] = useState([
-    "800",
-    "900",
+    " 800",
+    " 900",
     "1000",
     "1100",
     "1200",
@@ -39,13 +39,15 @@ const Problemid = () => {
   
   function add(index,Problem) {
     // console.log(index.index);
+    if(cnt[index.index]<10){
     let arr=[...cnt];
-    arr[index.index]++;
+      arr[index.index]++;
     // console.log(arr);
     setCnt(arr);
     arr=ProbList;
     arr.push(Problem.Problem);
     setProbList(arr);
+    }
     // console.log(ProbList);
   }
 
